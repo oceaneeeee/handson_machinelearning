@@ -1,0 +1,7 @@
+version: '3'
+services:
+  segment:
+    build: docker
+    volumes:
+      - .:/work
+    command: python3 main.py example.jpg
